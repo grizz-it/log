@@ -1,0 +1,54 @@
+{
+    "name": "grizz-it/log",
+    "description": "A standard implementation of a logger.",
+    "keywords": [
+        "log",
+        "logging"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "grizz-it/vfs": "^1.0",
+        "php-unified/log": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Grizz-IT",
+            "homepage": "https://www.grizz-it.com/",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "GrizzIt\\Log\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrizzIt\\Log\\Tests\\": "tests/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/.gitignore",
+            "/.travis.yml",
+            "/phpunit.xml",
+            "/phpcs.xml",
+            "/PULL_REQUEST_TEMPLATE.md",
+            "/CODE_OF_CONDUCT.md",
+            "/CONTRIBUTING.md"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "squizlabs/php_codesniffer": "^3.5"
+    }
+}
