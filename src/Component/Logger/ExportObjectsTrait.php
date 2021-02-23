@@ -7,8 +7,6 @@
 
 namespace GrizzIt\Log\Component\Logger;
 
-use DateTime;
-
 trait ExportObjectsTrait
 {
     /**
@@ -18,7 +16,7 @@ trait ExportObjectsTrait
      *
      * @return mixed
      */
-    public function exportObjects($context)
+    public function exportObjects(mixed $context): mixed
     {
         if (is_array($context)) {
             foreach ($context as $key => $value) {

@@ -18,14 +18,14 @@ class FileSystemLogger implements LoggerInterface
      *
      * @var FileSystemInterface
      */
-    private $fileSystem;
+    private FileSystemInterface $fileSystem;
 
     /**
      * Contains the log formatter.
      *
      * @var LogFormatterInterface
      */
-    private $logFormatter;
+    private LogFormatterInterface $logFormatter;
 
     /**
      * Constructor.

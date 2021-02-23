@@ -7,7 +7,6 @@
 
 namespace GrizzIt\Log\Component\Formatter;
 
-use Throwable;
 use GrizzIt\Log\Common\LogFormatterInterface;
 use GrizzIt\Log\Component\Logger\TimestampTrait;
 use GrizzIt\Log\Component\Logger\ExportObjectsTrait;

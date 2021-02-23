@@ -9,9 +9,6 @@ namespace GrizzIt\Log\Component\Logger;
 
 use PhpUnified\Log\TransitLogger;
 use PhpUnified\Log\Common\LoggerInterface;
-use GrizzIt\Vfs\Common\FileSystemInterface;
-use GrizzIt\Log\Common\LogFormatterInterface;
-use PhpUnified\Log\Common\TransitLoggerInterface;
 
 class ConfigurableTransitLogger extends TransitLogger
 {
@@ -20,7 +17,7 @@ class ConfigurableTransitLogger extends TransitLogger
      *
      * @var array
      */
-    private $allowedLogs = [];
+    private array $allowedLogs = [];
 
     /**
      * Constructor.
